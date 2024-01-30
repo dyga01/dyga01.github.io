@@ -1,0 +1,303 @@
+/* This style sheet was created by Aidan Dyga */
+/* Color Definitions */
+:root {
+    --gray: #b0b0b0;
+    --white: #ffffff;
+    --blue: #2382c2;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--white);
+    margin: 1em;
+    padding: 0;
+    font-family: Monaco, monospace;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin: 1em;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top: -0.25em;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #000000;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    border-radius: 2em;
+    list-style-type: none;
+    margin: 0.3em;
+    padding: 0.4em;
+    display: inline-block;
+}
+
+nav li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: var(--blue);
+    font-style: italic;
+}
+
+/* Main Content Area */
+main {
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--blue);
+    opacity: 0.85;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #000000;
+    color: var(--blue);
+    padding: 1em;
+}
+
+/* Email Form */
+.EmForm {
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin-bottom: 0.4em;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+}
+
+input {
+    width: 60%;
+    padding: 12px 20px;
+    margin-bottom: 0.4em;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+}
+
+button {
+    width: 20%;
+    padding: 12px 10px;
+    background-color: #000000;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    font-family: Monaco, monospace;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: #000000;
+}
+
+/* Social Media Icons */
+.s0 {
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5 {
+    float: left;
+    margin-right: 0.75em;
+    padding: 0.5em;
+}
+
+.s1:hover,
+.s2:hover,
+.s3:hover,
+.s4:hover,
+.s5:hover {
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+/* About Section */
+.about2 {
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--gray);
+    opacity: 0.85;
+    text-align: center;
+}
+
+/* Image Container */
+.imcontain {
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--gray);
+    text-align: center;
+    display: flex;
+}
+
+.imcontain img {
+    width: 50%;
+    height: 50%
+}
+
+.imcontain a {
+    font-family: Monaco, monospace;
+    font-size: 1.3em;
+    color: #000000;
+    float: right;
+    margin: auto;
+    text-decoration: none;
+}
+
+.imcontain a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+}
+
+table img {
+    width: 70%;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.mobcontain {
+    display: none;
+    padding: .25em;
+    margin-top: 1em;
+    border-radius: 2em;
+    text-align: center;
+    display: flex;
+}
+
+.procontain {
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--gray);
+    text-align: center;
+    display: flex;
+}
+
+.procontain img {
+    width: 50%;
+    height: 50%;
+}
+
+.procontain a {
+    font-family: Monaco, monospace;
+    font-size: 1.3em;
+    color: #000000;
+    float: right;
+    margin: auto;
+    text-decoration: none;
+}
+
+.procontain a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+@media (min-width: 798px) {
+    body {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .imcontain {
+        display: none;
+    }
+    .mobcontain {
+        display: block;
+    }
+     header {
+        scale: .85;
+        margin: -1em;
+    }
+}
+
+@media (min-width: 601px) {
+    .mobcontain {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .slideshow-container p {
+        display: none;
+    }
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    padding: 1em;
+    width: 70%;
+    height: 70%;
+    margin-top: 1em;
+    border-radius: 2em;
+    background-color: var(--gray);
+    text-align: center;
+    display: flex;
+}
+
+.slideshow-container p {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: left;
+}
+
+.mySlides {
+    display: none;
+}
