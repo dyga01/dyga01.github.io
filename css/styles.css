@@ -81,15 +81,6 @@ footer {
     padding: 1em;
 }
 
-/* Email Form */
-.EmForm {
-    padding: 1em;
-    margin-top: 1em;
-    border-radius: 2em;
-    background-color: var(--gray);
-    text-align: center;
-}
-
 textarea {
     width: 60%;
     padding: 12px 20px;
